@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie sua mentoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="img1.png" alt="Balão laranja com 5 estrelhas, sendo 3 delas preenchidas com a cor branca">
+
+            <div class="top">
+                <h2>Informações pessoais</h2>
+            </div>
+        </header>
+
+            <form>
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <div class="nome">
+                        <div class="input-wrapper">
+                            <label for="mentoria-nome">Nome</label>
+                            <input type="text" name="mentoria-nome" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentoria-sobrenome">Sobrenome</label>
+                            <input type="text" name="mentoria-sobrenome" required>
+                        </div>
+
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentoria-email">E-mail <span>(Digite um email válido)</span></label>
+                        <input type="email" name="mentoria-email" required>
+                    </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Informações do mentor</legend>
+               
+                        <div class="input-wrapper" id="select">
+                            <label for="mentoria-mentor">Selecione quem foi seu mentor</label>
+                            <select id="mentoria-mentor" required>
+                                <option value="Agostinho">Agostinho</option>
+                                <option value="Beicola">Beiçola</option>
+                                <option value="Mendonca">Mendonça</option>
+                                <option value="Nene">Nenê</option>
+                                <option value="Paulao">Paulão</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="mentoria-feedback">Feedback sobre o mentor</label>
+                            <textarea name="mentoria-feedback" ></textarea>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="checkbox">
+                        <input type="checkbox" name="mentoria-duvidas">
+                        <label for="mentoria-duvidas">Todas as minhas duvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                    </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Agendando próxima mentoria</legend>
+
+                        <div class="col-3">
+
+                        <div class="input-wrapper">
+                            <label for="mentoria-data">Data<span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="mentoria-data" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentoria-begin">Das</label>
+                            <input type="time" name="mentoria-begin" required>
+                        </div>
+                    <div class="input-wrapper">
+                        <label for="mentoria-end">Até</label>
+                        <input type="time" name="mentoria-end" required>
+                    </div>
+                </div>
+                    </div>
+                </fieldset>
+
+
+                <input type="submit" id="button" value="salvar">
+            </form>
+      
+
+
+
+    </div>
+
+
+
+</body>
+</html>
