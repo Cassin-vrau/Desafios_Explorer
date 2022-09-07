@@ -17,31 +17,37 @@ while(option !== 6){
         let numberOne = Number(prompt("Digite o primeiro número: "))
         let numberTwo = Number(prompt("Digite o Segundo número número: "))
         let verificacaoParOuImpar
+        let verificacaoNumeroIguais
         switch(option){
             case 1:
                 resultado = numberOne + numberTwo
                 verificacaoParOuImpar = resultado % 2 == 0 ? "Par" : "Impar"
-                alert(`${resultado} é ${verificacaoParOuImpar}`)
+                verificacaoNumeroIguais =  numberOne === numberTwo ? "Os dois número colocados eram iguais" : "Os dois número colocados eram diferentes"
+                alert(`${resultado}, é ${verificacaoParOuImpar} \n ${verificacaoNumeroIguais}`)
                 break
             case 2:
                 resultado = numberOne - numberTwo
                 verificacaoParOuImpar = resultado % 2 == 0 ? "Par" : "Impar"
-                alert(`${resultado} é ${verificacaoParOuImpar}`)
+                verificacaoNumeroIguais =  numberOne === numberTwo ? "Os dois número colocados eram iguais" : "Os dois número colocados eram diferentes"
+                alert(`${resultado}, é ${verificacaoParOuImpar} \n ${verificacaoNumeroIguais}`)
                 break
             case 3:
                 resultado = numberOne / numberTwo
                 verificacaoParOuImpar = resultado % 2 == 0 ? "Par" : "Impar"
-                alert(`${resultado} é ${verificacaoParOuImpar}`)
+                verificacaoNumeroIguais =  numberOne === numberTwo ? "Os dois número colocados eram iguais" : "Os dois número colocados eram diferentes"
+                alert(`${resultado}, é ${verificacaoParOuImpar} \n ${verificacaoNumeroIguais}`)
                 break
             case 4:
                 resultado = numberOne * numberTwo
                 verificacaoParOuImpar = resultado % 2 == 0 ? "Par" : "Impar"
-                alert(`${resultado} é ${verificacaoParOuImpar}`)       
+                verificacaoNumeroIguais =  numberOne === numberTwo ? "Os dois número colocados eram iguais" : "Os dois número colocados eram diferentes"
+                alert(`${resultado}, é ${verificacaoParOuImpar} \n ${verificacaoNumeroIguais}`)  
                 break
             case 5:
                 resultado = numberOne % numberTwo
                 verificacaoParOuImpar = resultado % 2 == 0 ? "Par" : "Impar"
-                alert(`${resultado} é ${verificacaoParOuImpar}`)
+                verificacaoNumeroIguais =  numberOne === numberTwo ? "Os dois número colocados eram iguais" : "Os dois número colocados eram diferentes"
+                alert(`${resultado}, é ${verificacaoParOuImpar} \n ${verificacaoNumeroIguais}`)
                break
             default:
             alert("Número inválido, digite novamente")
